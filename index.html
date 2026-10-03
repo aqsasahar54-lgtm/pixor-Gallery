@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pixor — Modern Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <!-- Background decoration -->
+    <div class="blur blur-one"></div>
+    <div class="blur blur-two"></div>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <span>✦</span> Pixor
+        </div>
+
+        <div class="nav-links">
+            <a href="#gallery">Gallery</a>
+            <a href="#categories">Categories</a>
+        </div>
+
+        <button class="theme-btn" id="themeBtn">
+            ☀
+        </button>
+
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span class="small-title">
+                ✦ VISUAL STORIES
+            </span>
+
+            <h1>
+                Discover the
+                <span>beautiful</span>
+                side of the world.
+            </h1>
+
+            <p>
+                Explore a collection of beautiful moments,
+                places and stories captured through photography.
+            </p>
+
+            <a href="#gallery" class="explore-btn">
+                Explore Gallery
+                <span>→</span>
+            </a>
+
+        </div>
+
+        <div class="hero-decoration">
+            <div class="circle"></div>
+            <div class="mini-card card-one">🌸</div>
+            <div class="mini-card card-two">🌊</div>
+            <div class="mini-card card-three">🌌</div>
+        </div>
+
+    </section>
+
+
+    <!-- SEARCH -->
+
+    <section class="tools" id="categories">
+
+        <div class="search-box">
+
+            <span>⌕</span>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search images..."
+            >
+
+        </div>
+
+
+        <!-- FILTERS -->
+
+        <div class="filters">
+
+            <button class="filter-btn active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn" data-filter="nature">
+                🌿 Nature
+            </button>
+
+            <button class="filter-btn" data-filter="travel">
+                ✈ Travel
+            </button>
+
+            <button class="filter-btn" data-filter="animals">
+                🐾 Animals
+            </button>
+
+            <button class="filter-btn" data-filter="city">
+                🏙️ Cities
+            </button>
+
+            <button class="filter-btn" data-filter="space">
+                🌌 Space
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- GALLERY HEADER -->
+
+    <section class="gallery-heading" id="gallery">
+
+        <div>
+            <span class="section-label">
+                COLLECTION
+            </span>
+
+            <h2>Explore the gallery</h2>
+        </div>
+
+        <p>
+            <span id="imageCount">20</span> beautiful moments
+        </p>
+
+    </section>
+
+
+    <!-- GALLERY -->
+
+    <main class="gallery">
+
+
+        <!-- IMAGE 1 -->
+
+        <article
+            class="gallery-item tall"
+            data-category="nature"
+            data-title="Into the Mountains"
+        >
+
+            <img
+                src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=85"
+                alt="Mountains"
+            >
+
+            <div class="image-overlay">
+
+                <div>
+                    <span>Nature</span>
+                    <h3>Into the Mountains</h3>
+                </div>
+
+                <button class="like-btn">♡</button>
+
+            </div>
+
+        </article>
+
+
+        <!-- IMAGE 2 -->
+
+        <article
+            class="gallery-item"
+            data-category="travel"
+            data-title="Ocean Escape"
+        >
+
+            <img
+                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=85"
+                alt="Ocean"
+            >
+
+            <div class="image-overlay">
+
+                <div>
+                    <span>Travel</span>
+                    <h3>Ocean Escape</h3>
+                </div>
+
+                <button class="like-btn">♡</button>
+
+            </div>
+
+        </article>
+
+
+        <!-- IMAGE 3 -->
+
+        <article
+            class="gallery-item"
+            data-category="city"
+            data-title="City Lights"
+        >
+
+            <img
+                src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=900&q=85"
+                alt="City"
+            >
+
+            <div class="image-overlay">
+
+                <div>
+                    <span>Cities</span>
+                    <h3>City Lights</h3>
+                </div>
+
+                <button class="like-btn">♡</button>
+
+            </div>
+
+        </article>
+
+
+        <!-- IMAGE 4 -->
+
+        <article
+            class="gallery-item wide"
+            data-category="nature"
+            data-title="Green Valley"
+        >
+
+            <img
+                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=85"
+                alt="Forest"
+            >
+
+            <div class="image-overlay">
+
+                <div>
+                    <span>Nature</span>
+                    <h3>Green Valley</h3>
+                </div>
+
+                <button class="like-btn">♡</button>
+
+            </div>
+
+        </article>
+
+
+        <!-- IMAGE 5 -->
+
+        <article
+            class="gallery-item"
+            data-category="animals"
+            data-title="Wild Beauty"
+        >
+
+            <img
+                src="https://images.unsplash.com/photo-1549366021-9f761d450615?auto=format&fit=crop&w=900&q=85"
+                alt="Lion"
+            >
+
+            <div class="image-overlay">
+
+                <div>
+                    <span>Animals</span>
+                    <h3>Wild Beauty</h3>
+                </div>
+
+                <button class="like-btn">♡</button>
+
+            </div>
+
+        </article>
+
+
+        <!-- IMAGE 6 -->
+
+        <article
+            class="gallery-item tall"
+            data-category="travel"
+            data-title="Desert Road"
+        >
+
+            <img
+                src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=85"
+                alt="Desert"
+            >
+
+            <div class="image-overlay">
+
+                <div>
+                    <span>Travel</span>
+                    <h3>Desert Road</h3>
+                </div>
+
+                <button class="like-btn">♡</button>
+
+            </div>
+
+        </article>
+
+
+        <!-- IMAGE 7 -->
+
+        <article
+            class="gallery-item"
+            data-category="space"
+            data-title="Into The Galaxy"
+        >
+
+            <img
+                src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?auto=format&fit=crop&w=900&q=85"
+                alt="Galaxy"
+            >
+
+            <div class="image-overlay">
+
+                <div>
+                    <span>Space</span>
+                    <h3>Into The Galaxy</h3>
+                </div>
+
+                <button class="like-btn">♡</button>
+
+            </div>
+
+        </article>
+
+
+        <!-- IMAGE 8 -->
+
+        <article
+            class="gallery-item"
+            data-category="nature"
+            data-title="Golden Sunset"
+        >
+
+            <img
+                src="https://images.unsplash.com/photo-1472120435266-53107fd0c44a?auto=format&fit=crop&w=900&q=85"
+                alt="Sunset"
+            >
+
+            <div class="image-overlay">
+
+                <div>
+                    <span>Nature</span>
+                    <h3>Golden Sunset</h3>
+                </div>
+
+                <button class="like-btn">♡</button>
+
+            </div>
+
+        </article>
+
+
+        <!-- IMAGE 9 -->
+
+        <article
+            class="gallery-item wide"
+            data-category="city"
+            data-title="Urban Nights"
+        >
+
+            <img
+                src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1200&q=85"
+                alt="City Night"
+            >
+
+            <div class="image-overlay">
+
+                <div>
+                    <span>Cities</span>
+                    <h3>Urban Nights</h3>
+                </div>
+
+                <button class="like-btn">♡</button>
+
+            </div>
+
+        </article>
+
+
+        <!-- IMAGE 10 -->
+
+        <article
+            class="gallery-item"
+            data-category="animals"
+            data-title="Little Explorer"
+        >
+
+            <img
+                src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=900&q=85"
+                alt="Dog"
+            >
+
+            <div class="image-overlay">
+
+                <div>
+                    <span>Animals</span>
+                    <h3>Little Explorer</h3>
+                </div>
+
+                <button class="like-btn">♡</button>
+
+            </div>
+
+        </article>
+
+
+        <!-- IMAGE 11 -->
+
+        <article
+            class="gallery-item"
+            data-category="travel"
+            data-title="Coastal Dreams"
+        >
+
+            <img
+                src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=900&q=85"
+                alt="Beach"
+            >
+
+            <div class="image-overlay">
+
+                <div>
+                    <span>Travel</span>
+                    <h3>Coastal Dreams</h3>
+                </div>
+
+                <button class="like-btn">♡</button>
+
+            </div>
+
+        </article>
+
+
+        <!-- IMAGE 12 -->
+
+        <article
+            class="gallery-item"
+            data-category="nature"
+            data-title="Purple Dreams"
+        >
+
+            <img
+                src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=900&q=85"
+                alt="Plants"
+            >
+
+            <div class="image-overlay">
+
+                <div>
+                    <span>Nature</span>
+                    <h3>Purple Dreams</h3>
+                </div>
+
+                <button class="like-btn">♡</button>
+
+            </div>
+
+        </article>
+
+
+        <!-- IMAGE 13 -->
+
+        <article
+            class="gallery-item tall"
+            data-category="city"
+            data-title="Modern Architecture"
+        >
+
+            <img
+                src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=900&q=85"
+                alt="Architecture"
+            >
+
+            <div class="image-overlay">
+
+                <div>
+                    <span>Cities</span>
+                    <h3>Modern Architecture</h3>
+                </div>
+
+                <button class="like-btn">♡</button>
+
+            </div>
+
+        </article>
+
+
+        <!-- IMAGE 14 -->
+
+        <article
+            class="gallery-item"
+            data-category="animals"
+            data-title="Wild Eyes"
+        >
+
+            <img
+                src="https://images.unsplash.com/photo-1551969014-7d2c4cddf0b6?auto=format&fit=crop&w=900&q=85"
+                alt="Animal"
+            >
+
+            <div class="image-overlay">
+
+                <div>
+                    <span>Animals</span>
+                    <h3>Wild Eyes</h3>
+                </div>
+
+                <button class="like-btn">♡</button>
+
+            </div>
+
+        </article>
+
+
+        <!-- IMAGE 15 -->
+
+        <article
+            class="gallery-item wide"
+            data-category="space"
+            data-title="Milky Way"
+        >
+
+            <img
+                src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1200&q=85"
+                alt="Milky Way"
+            >
+
+            <div class="image-overlay">
+
+                <div>
+                    <span>Space</span>
+                    <h3>Milky Way</h3>
+                </div>
+
+                <button class="like-btn">♡</button>
+
+            </div>
+
+        </article>
+
+
+        <!-- IMAGE 16 -->
+
+        <article
+            class="gallery-item"
+            data-category="travel"
+            data-title="Hidden Paradise"
+        >
+
+            <img
+                src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&q=85"
+                alt="Landscape"
+            >
+
+            <div class="image-overlay">
+
+                <div>
+                    <span>Travel</span>
+                    <h3>Hidden Paradise</h3>
+                </div>
+
+                <button class="like-btn">♡</button>
+
+            </div>
+
+        </article>
+
+
+        <!-- IMAGE 17 -->
+
+        <article
+            class="gallery-item"
+            data-category="nature"
+            data-title="Misty Forest"
+        >
+
+            <img
+                src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=900&q=85"
+                alt="Forest"
+            >
+
+            <div class="image-overlay">
+
+                <div>
+                    <span>Nature</span>
+                    <h3>Misty Forest</h3>
+                </div>
+
+                <button class="like-btn">♡</button>
+
+            </div>
+
+        </article>
+
+
+        <!-- IMAGE 18 -->
+
+        <article
+            class="gallery-item"
+            data-category="city"
+            data-title="Downtown"
+        >
+
+            <img
+                src="https://images.unsplash.com/photo-1444723121867-7a241cacace9?auto=format&fit=crop&w=900&q=85"
+                alt="Downtown"
+            >
+
+            <div class="image-overlay">
+
+                <div>
+                    <span>Cities</span>
+                    <h3>Downtown</h3>
+                </div>
+
+                <button class="like-btn">♡</button>
+
+            </div>
+
+        </article>
+
+
+        <!-- IMAGE 19 -->
+
+        <article
+            class="gallery-item"
+            data-category="nature"
+            data-title="Blue Lake"
+        >
+
+            <img
+                src="https://images.unsplash.com/photo-1439853949127-fa647821eba0?auto=format&fit=crop&w=900&q=85"
+                alt="Lake"
+            >
+
+            <div class="image-overlay">
+
+                <div>
+                    <span>Nature</span>
+                    <h3>Blue Lake</h3>
+                </div>
+
+                <button class="like-btn">♡</button>
+
+            </div>
+
+        </article>
+
+
+        <!-- IMAGE 20 -->
+
+        <article
+            class="gallery-item"
+            data-category="space"
+            data-title="Night Sky"
+        >
+
+            <img
+                src="https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?auto=format&fit=crop&w=900&q=85"
+                alt="Night Sky"
+            >
+
+            <div class="image-overlay">
+
+                <div>
+                    <span>Space</span>
+                    <h3>Night Sky</h3>
+                </div>
+
+                <button class="like-btn">♡</button>
+
+            </div>
+
+        </article>
+
+    </main>
+
+
+    <!-- EMPTY RESULT -->
+
+    <div class="no-results" id="noResults">
+
+        <div>🔎</div>
+
+        <h3>No images found</h3>
+
+        <p>Try another search or category.</p>
+
+    </div>
+
+
+    <!-- LIGHTBOX -->
+
+    <div class="lightbox" id="lightbox">
+
+        <button class="lightbox-close" id="close">
+            ×
+        </button>
+
+        <button class="lightbox-nav prev" id="prev">
+            ‹
+        </button>
+
+        <div class="lightbox-content">
+
+            <img id="lightboxImg" src="" alt="">
+
+            <div class="lightbox-info">
+
+                <div>
+                    <span id="lightboxCategory">
+                        Nature
+                    </span>
+
+                    <h2 id="lightboxTitle">
+                        Image
+                    </h2>
+                </div>
+
+                <button class="lightbox-like">
+                    ♡
+                </button>
+
+            </div>
+
+        </div>
+
+        <button class="lightbox-nav next" id="next">
+            ›
+        </button>
+
+    </div>
+
+
+    <footer>
+
+        <div class="footer-logo">
+            ✦ Pixor
+        </div>
+
+        <p>
+            A collection of beautiful visual stories.
+        </p>
+
+        <span>
+            © 2026 Pixor Gallery
+        </span>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
